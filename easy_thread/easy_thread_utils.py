@@ -10,5 +10,9 @@ class EasyThreadUtils(Thread):
 	
 		self.name = gen_thread_name()
 		self.func = func
+
+	def __str__(self) -> str:
+		return self.name
+
 	def run(self):
 		self.func()
