@@ -6,18 +6,20 @@
 
 
 ```sh
-from easy_thread import easy_thread
+from easy_thread import EasyThread
 
 def hello():
 	while True:
-		print('Hello!')
+		print('hello')
 
 def goodbye():
 	while True:
-		print('goodbye!')
+		print('bye')
 
-easy_thread(hello)
-easy_thread(goodbye)
+thread = EasyThread(goodbye)
+thread.run(10)
+
+thread2 = EasyThread(hello)
+thread2.run(5)
 ```
 
-This program adds thread with function hello() and function goodbye()
