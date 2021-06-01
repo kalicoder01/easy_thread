@@ -5,7 +5,7 @@
 
 
 
-```sh
+```py
 from easy_thread import EasyThread
 
 def hello():
