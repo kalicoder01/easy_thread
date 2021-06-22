@@ -6,7 +6,7 @@
 
 
 ```py
-from easy_thread import EasyThread
+from easy_thread import easy_thread
 
 def hello():
 	while True:
@@ -16,10 +16,7 @@ def goodbye():
 	while True:
 		print('bye')
 
-thread = EasyThread(goodbye)
-thread.run(10)
-
-thread2 = EasyThread(hello)
-thread2.run(5)
+easy_thread(hello)
+easy_thread(goodbye)
 ```
 
